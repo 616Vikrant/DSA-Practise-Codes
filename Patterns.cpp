@@ -26,7 +26,7 @@ int main(){
         cout<<endl;
         i=i+1;
     }*/
-    /*int n;
+    int n;
     cin>>n;
     int i=1;
     int count=1;
@@ -39,7 +39,7 @@ int main(){
         }
         cout<<endl;
         i=i+1;
-    }*/
+    }/*
     int n;
     cin>>n;
     int row=1;
@@ -50,6 +50,6 @@ int main(){
         col=col+1;}
         cout<<endl;
         row=row+1;
-    }
+    }*/
     return 0;
 }
