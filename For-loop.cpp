@@ -39,7 +39,7 @@ int main(){
     }
 } */
 //prime or not
-#include <iostream>
+/* #include <iostream>
 using namespace std;
 int main(){
     int n;
@@ -56,4 +56,42 @@ int main(){
         cout<<"Not a prime number";
     }
     else {cout<<"Prime number";}
+} */
+//Decimal to Binary
+/* #include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+    int n;
+    cout<<"enter n:";
+    cin>>n;
+    float answer=0;
+    int i=0;
+    while (n!=0){
+        int bit=n&1;
+        answer=(bit* pow(10,i))+answer;
+        n=n >> 1;
+        i++;
+    }
+    cout<<answer;
+} */
+//Binary to Decimal
+#include<iostream>
+#include<math.h>
+using namespace std;
+int main(){
+    int n;
+    cout<<"enter n:";
+    cin>>n;
+    float answer=0;
+    int i=0;
+    while (n!=0){
+        int digit=n%10;
+        if (digit==1){
+            answer=(pow(2,i))+answer;
+        }
+            n=n/10;
+            i++;
+    }
+    cout<<answer;
 }
