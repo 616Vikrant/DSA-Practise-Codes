@@ -76,7 +76,7 @@ int main(){
     cout<<answer;
 } */
 //Binary to Decimal
-#include<iostream>
+/* #include<iostream>
 #include<math.h>
 using namespace std;
 int main(){
@@ -94,4 +94,23 @@ int main(){
             i++;
     }
     cout<<answer;
+} */
+//reverse bits of a bnumber and return decimal
+#include <bits/stdc++.h>
+using namespace std;
+class Solution {
+   public:
+   uint32_t reverseBits(uint32_t n) {
+      uint32_t ans = 0;
+      for(int i = 31; i >= 0; i--){
+         ans |= (n & 1) <<i;
+         n>>=1;
+      }
+      return ans;
+   }
+};
+main(){
+   Solution ob;
+   cout<<"enter bits: ";
+   cout << ob.reverseBits(0b00000000000000000000001001110100);
 }
