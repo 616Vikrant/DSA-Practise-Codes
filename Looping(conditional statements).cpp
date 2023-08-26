@@ -96,7 +96,7 @@ int main(){
     cout<<answer;
 } */
 //reverse bits of a bnumber and return decimal
-#include <bits/stdc++.h>
+/* #include <bits/stdc++.h>
 using namespace std;
 class Solution {
    public:
@@ -113,4 +113,4 @@ main(){
    Solution ob;
    cout<<"enter bits: ";
    cout << ob.reverseBits(0b00000000000000000000001001110100);
-}
+} */
