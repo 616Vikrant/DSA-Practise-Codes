@@ -114,3 +114,34 @@ main(){
    cout<<"enter bits: ";
    cout << ob.reverseBits(0b00000000000000000000001001110100);
 } */
+//Basic Calculator
+# include <iostream>
+# include <cmath>
+using namespace std;
+int main(){
+    int a,b;
+    cout<<"enter value of a:";
+    cin>>a;
+    cout<<endl<<"enter value of b:";
+    cin>>b;
+    char op;
+    cout<<endl<<"enter operator:";
+    cin>>op;
+    cout<<endl;
+    switch (op) {
+        case '+': cout<<a+b<<endl;
+            break;
+        case '-': cout<<a-b<<endl;
+            break;
+        case '/': cout<<a/b<<endl;
+            break;
+        case '*': cout<<a*b<<endl;
+            break;
+        case '%': cout<<a%b<<endl;
+            break;
+        case '//': cout<<floor(a/b)<<endl;
+            break;
+        default: cout<<"Give Correct Input for Operator!"<<endl;
+            break;
+    }
+}
