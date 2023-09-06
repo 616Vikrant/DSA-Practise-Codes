@@ -80,12 +80,16 @@ int main(){
 } */
 
 //reverse adjacent element in an array;
-#include<iostream>
+/* #include<iostream>
 using namespace std;
 
 void reverseadjacent(int array[],int size){
     for(int i=0;i<size;i=i+2){
-        swap(array[i],array[i+1]);
+        //swap(array[i],array[i+1]);//
+        //use swap function or write code for swapping//
+        int temp=array[i];
+        array[i]=array[i+1];
+        array[i+1]=temp;
     }
 }
 
@@ -106,4 +110,32 @@ int main(){
     }
     reverseadjacent(array,size);
     printarray(array,size);
+} */
+
+//sorting elements of an array;//incorrect code
+#include<iostream>
+using namespace std;
+void sort(int arr[],int size){
+    int i=0,j=size-1;
+    while(i<j){
+        if (arr[i]<arr[j]){
+            swap(arr[i],arr[j]);
+            i++;
+            j--;   
+        }
+    }
+    for(int a=0;a<size;a++){
+        cout<<arr[a]<<endl;
+    }
+}
+int main(){
+    int size;
+    cout<<"enter size of array: ";
+    cin>>size;
+    int arr[size];
+    cout<<endl<<"enter elements of array: ";
+    for (int i=0;i<size;i++){
+        cin>>arr[i];
+    }
+    sort(arr,size);
 }
